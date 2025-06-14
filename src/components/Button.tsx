@@ -1,11 +1,6 @@
 import React, {memo} from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
-interface ButtonProps {
-  title: string;
-  onPress: () => void;
-}
-
 const Button = ({title, onPress}: ButtonProps) => {
   return (
     <TouchableOpacity

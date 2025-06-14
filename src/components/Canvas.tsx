@@ -9,15 +9,6 @@ import Animated, {
 import Button from './Button';
 import EditableText from './EditableText';
 
-interface CanvasProps {
-  backgroundUri: string;
-  texts: any[];
-  onUpdateText: (id: string, value: string) => void;
-  onMoveText: (id: string, x: number, y: number) => void;
-  onRemoveText: (id: string) => void;
-  onDuplicateText: (id: string) => void;
-}
-
 const {width: screenWidth, height: screenHeight} = Dimensions.get('window');
 const BOX_SIZE = 250;
 

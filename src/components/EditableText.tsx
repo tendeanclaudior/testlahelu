@@ -9,19 +9,6 @@ import {
   View,
 } from 'react-native';
 
-interface EditableTextProps {
-  text: {
-    id: string;
-    value: string;
-    x: number;
-    y: number;
-  };
-  onUpdateText: (id: string, value: string) => void;
-  onMoveText: (id: string, x: number, y: number) => void;
-  onRemove: () => void;
-  onDuplicate: () => void;
-}
-
 const EditableText = ({
   text,
   onUpdateText,
